@@ -1,0 +1,131 @@
+h1,
+h5 {
+  width: 80%;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+}
+
+#components {
+  margin: 15px;
+}
+
+.component-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+  text-align: center;
+  margin: 50px;
+  overflow: scroll;
+  position: relative;
+  min-width: 450px;
+  min-height: 400px;
+}
+
+#first-row-components {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.click-to-resize {
+  bottom: 0;
+  right: 5px;
+  position: absolute;
+  font-size: x-small;
+  color: grey;
+}
+
+.options-div {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.options-div-btn,
+.done-btn {
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  padding: 3px;
+  font-size: 10px;
+  width: 30%;
+}
+
+.done-btn {
+  width: 10rem;
+  margin-top: 10%;
+  padding: 7px;
+}
+
+.options-div-btn:hover,
+.done-btn:hover {
+  transition: all 0.3s ease;
+  background-color: black;
+  color: white;
+}
+
+#edit-component,
+#add-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.edit-component-input,
+.add-component-input {
+  font-size: 16px;
+  width: 75%;
+  height: 10%;
+  margin: 15px 5px;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 15px;
+}
+
+.edit-component-input:focus,
+.add-component-input:focus {
+  outline: none;
+}
+
+.cancel-btn {
+  top: 5px;
+  left: 5px;
+  position: absolute;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: 1px 5px;
+}
+
+.cancel-btn:hover {
+  transition: all 0.3s ease;
+  background-color: white;
+  color: black;
+}
+
+#spinner {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  border: 10px solid black;
+  border-top: 10px solid white;
+  animation: spin-animation 2s linear infinite;
+}
+
+@keyframes spin-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
